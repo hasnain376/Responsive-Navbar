@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header #nav {
+  padding: 1rem min(5rem, 8%);
+}
+
+@media screen and (max-width: 640px) {
+  #nav-link {
+    top: 100%;
+    padding: 1rem min(5rem, 8%);
+    height: 90vh;
+    left: -100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.119);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.119);
+    border-bottom-right-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.5s ease-in;
+  }
+  #close {
+    right: 0;
+    top: -0px;
+  }
+}

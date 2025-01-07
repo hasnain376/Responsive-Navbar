@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind.CSS Script File Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- BoxIcon File Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="max-sm:relative">
+        <nav class="flex justify-between items-center relative" id="nav">
+            <div class="flex gap-1"><span>
+                    <h1 class="text-2xl ">Coding</h1>
+                </span>
+                <span>
+                    <h1 class="text-2xl">Addict</h1>
+                </span>
+            </div>
+            <div>
+                <ul class="flex gap-8 max-sm:absolute max-sm:left-0  max-sm:flex-col max-sm:w-60 text-xl"
+                    id="nav-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contect</a></li>
+                    <span class="absolute  hidden max-sm:block text-4xl" id="close">
+                        <i class='bx bx-x cursor-pointer text-red-600'></i>
+                    </span>
+                    <div class="hidden max-sm:block text-blue-500 absolute bottom-4">
+                        <i class='bx bxl-facebook-circle' ></i>
+                        <i class='bx bxl-linkedin-square' ></i>
+                        <i class='bx bxl-instagram-alt' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                    </div>
+                </ul>
+                
+            </div>
+            <div class="hidden max-sm:block text-4xl ">
+                <span><i class='bx bx-menu cursor-pointer' id="menu"></i></span>
+            </div>
+        </nav>
+    </header>
+</body>
+<!-- Javascript File Link -->
+<script src="script.js"></script>
+
+</html>
